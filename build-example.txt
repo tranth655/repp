@@ -1,0 +1,42 @@
+
+✅ HƯỚNG DẪN BUILD MOD FABRIC: DownloaderMod
+
+---
+📁 CẤU TRÚC THƯ MỤC CHUẨN
+.
+├── build.gradle
+├── gradlew
+├── gradlew.bat
+├── settings.gradle
+├── src/
+│   └── main/
+│       ├── java/com/example/downloadermod/DownloaderMod.java
+│       └── resources/fabric.mod.json
+├── gradle/
+└── build-example.txt  (📄 bạn đang đọc file này)
+---
+
+⚙️ LỆNH BUILD:
+
+    ./gradlew build
+
+⏱ Sau khi build xong, file mod nằm tại:
+
+    build/libs/DownloaderMod-1.0.0.jar
+
+---
+
+💡 GỢI Ý:
+
+- Nếu bị lỗi plugin loom: sửa `build.gradle` về `loom 1.4.10` hoặc thêm `pluginManagement` trong `settings.gradle`
+- Nếu Gradle không nhận source code, hãy đảm bảo file `.java` nằm đúng trong `src/main/java/...`
+
+---
+
+📥 Sau khi có `.jar`, bạn copy vào thư mục:
+
+    %APPDATA%\.minecraft\mods
+
+... và chạy Minecraft với Fabric Loader là xong.
+
+-- Chúc bạn thành công!
